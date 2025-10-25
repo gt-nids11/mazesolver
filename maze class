@@ -19,3 +19,12 @@ class Maze{ //class to represent the maze structure
     public boolean isValid(int x, int y) {
         return (x >= 0 && x < rows && y >= 0 && y < cols);
     }
+ public void printMaze() {
+        for (int[] row : grid) {
+            for (int cell : row) {
+                System.out.print(cell + " ");
+            }
+            System.out.println();
+        }
+    }
+}
