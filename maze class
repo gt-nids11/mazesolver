@@ -1,0 +1,21 @@
+class Maze{ //class to represent the maze structure
+     private int[][] grid;
+    private int rows, cols;
+
+    public Maze(int[][] grid) {
+        this.grid = grid;
+        this.rows = grid.length;
+        this.cols = grid[0].length;
+    }
+    public int getRows() {
+         return rows; 
+        }
+    public int getCols() { 
+        return cols;
+     }
+    public int getCell(int x, int y) { 
+        return grid[x][y]; 
+    }
+    public boolean isValid(int x, int y) {
+        return (x >= 0 && x < rows && y >= 0 && y < cols);
+    }
