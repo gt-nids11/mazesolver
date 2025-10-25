@@ -1,0 +1,33 @@
+class MazeSolver {
+private Maze maze;       //maze object
+private int startX, startY;  // start position
+private int endX, endY;      // destination position
+private boolean[][] visited; // visited cells tracker
+
+public MazeSolver(int[][] maze, int startX, int startY, int endX, int endY)
+
+public boolean solveMaze(){
+    //recurivsely calls solveDFS or solveBFS 
+    //returns true if path found else false
+}
+private boolean solveDFS(int x, int y){
+    //Recursive backtracking algorithm for pathfinding
+    //Checks for valid cell, marks it as visited, explores neighbors.
+    //Returns true if destination is reached.
+}
+private boolean solveBFS(){//alternative
+//bfs using queue to find shortest path from start to end
+//stores parent nodes to reconstruct final path
+}
+private boolean isSafe(int x, int y)
+{
+    //Check if cell (x, y) is within bounds, not blocked (maze[x][y] == 1), and not visited.
+}
+ public void printMaze(){
+    //Prints the original maze grid
+ }
+  public void printSolution(){
+    //Prints the solution[][] grid (showing path from start to end)
+  }
+ 
+}
